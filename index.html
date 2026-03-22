@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="scifi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScienceQuest - STEM Learning Platform</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/themes/scifi.css" />
+</head>
+<body class="home-page">
+
+  <!-- Background particles -->
+  <div class="bg-particles" aria-hidden="true">
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚛️</span>
+        <span class="logo-text">Science<strong>Quest</strong></span>
+      </div>
+      <nav class="header-nav">
+        <a href="progress.html" class="btn btn--ghost btn--sm">
+          <span>📊</span> My Progress
+        </a>
+        <button class="btn btn--ghost btn--sm" id="lockToggle" title="Toggle section locking">
+          <span id="lockIcon">🔒</span>
+          <span id="lockLabel">Locked</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Grade 5–8 Science</div>
+        <h1 class="hero-title">Explore the Universe<br/><span class="gradient-text">One Discovery at a Time</span></h1>
+        <p class="hero-subtitle">Interactive science lessons with quizzes, real-world facts, and achievements. Learn Matter, Energy, and Biology!</p>
+        <div class="hero-stats">
+          <div class="stat-chip" id="totalCards">
+            <span class="stat-icon">🃏</span>
+            <span class="stat-value" id="statCards">0</span>
+            <span class="stat-label">Cards Done</span>
+          </div>
+          <div class="stat-chip" id="totalStreak">
+            <span class="stat-icon">🔥</span>
+            <span class="stat-value" id="statStreak">0</span>
+            <span class="stat-label">Best Streak</span>
+          </div>
+          <div class="stat-chip" id="totalBadges">
+            <span class="stat-icon">🏆</span>
+            <span class="stat-value" id="statBadges">0</span>
+            <span class="stat-label">Badges</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit-ring ring-1">
+          <div class="orbit-dot dot-matter">⚗️</div>
+        </div>
+        <div class="orbit-ring ring-2">
+          <div class="orbit-dot dot-energy">⚡</div>
+        </div>
+        <div class="orbit-ring ring-3">
+          <div class="orbit-dot dot-bio">🧬</div>
+        </div>
+        <div class="orbit-center">🔬</div>
+      </div>
+    </section>
+
+    <!-- Topic Grid -->
+    <section class="topics-section">
+      <h2 class="section-title">Choose Your Mission</h2>
+      <div class="topics-grid" id="topicsGrid">
+
+        <!-- Matter -->
+        <div class="topic-card" data-topic="science" data-subtopic="matter" id="topic-matter">
+          <div class="topic-card__glow"></div>
+          <div class="topic-card__header">
+            <span class="topic-icon">⚗️</span>
+            <div class="topic-status" id="status-matter">
+              <span class="status-dot status-dot--active"></span>
+              <span class="status-text">Available</span>
+            </div>
+          </div>
+          <h3 class="topic-card__title">Matter & States</h3>
+          <p class="topic-card__desc">Discover atoms, molecules, and the three states of matter. Why does ice melt? Why does water boil?</p>
+          <div class="topic-card__progress" id="progress-matter">
+            <div class="mini-progress-bar">
+              <div class="mini-progress-bar__fill" style="width:0%"></div>
+            </div>
+            <span class="progress-text">0 / 20 cards</span>
+          </div>
+          <div class="topic-card__tags">
+            <span class="tag">Atoms</span>
+            <span class="tag">States</span>
+            <span class="tag">Reactions</span>
+          </div>
+          <button class="btn btn--primary topic-start-btn" data-topic="science" data-subtopic="matter">
+            Start Mission <span>→</span>
+          </button>
+        </div>
+
+        <!-- Energy -->
+        <div class="topic-card topic-card--locked" data-topic="science" data-subtopic="energy" id="topic-energy">
+          <div class="topic-card__glow"></div>
+          <div class="topic-card__header">
+            <span class="topic-icon">⚡</span>
+            <div class="topic-status" id="status-energy">
+              <span class="status-dot status-dot--locked"></span>
+              <span class="status-text">Locked</span>
+            </div>
+          </div>
+          <h3 class="topic-card__title">Energy & Forces</h3>
+          <p class="topic-card__desc">Explore electricity, gravity, heat, light, and the laws that govern how everything moves.</p>
+          <div class="topic-card__progress" id="progress-energy">
+            <div class="mini-progress-bar">
+              <div class="mini-progress-bar__fill" style="width:0%"></div>
+            </div>
+            <span class="progress-text">Unlock: 70% in Matter</span>
+          </div>
+          <div class="topic-card__tags">
+            <span class="tag">Electricity</span>
+            <span class="tag">Motion</span>
+            <span class="tag">Heat</span>
+          </div>
+          <button class="btn btn--secondary topic-start-btn" data-topic="science" data-subtopic="energy" disabled>
+            <span>🔒</span> Locked
+          </button>
+        </div>
+
+        <!-- Biology -->
+        <div class="topic-card topic-card--locked" data-topic="science" data-subtopic="biology" id="topic-biology">
+          <div class="topic-card__glow"></div>
+          <div class="topic-card__header">
+            <span class="topic-icon">🧬</span>
+            <div class="topic-status" id="status-biology">
+              <span class="status-dot status-dot--locked"></span>
+              <span class="status-text">Locked</span>
+            </div>
+          </div>
+          <h3 class="topic-card__title">Biology & Life</h3>
+          <p class="topic-card__desc">Dive into cells, DNA, ecosystems, and the amazing science of living things.</p>
+          <div class="topic-card__progress" id="progress-biology">
+            <div class="mini-progress-bar">
+              <div class="mini-progress-bar__fill" style="width:0%"></div>
+            </div>
+            <span class="progress-text">Unlock: 70% in Energy</span>
+          </div>
+          <div class="topic-card__tags">
+            <span class="tag">Cells</span>
+            <span class="tag">DNA</span>
+            <span class="tag">Ecosystems</span>
+          </div>
+          <button class="btn btn--secondary topic-start-btn" data-topic="science" data-subtopic="biology" disabled>
+            <span>🔒</span> Locked
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recent achievements -->
+    <section class="achievements-section" id="achievementsSection" style="display:none">
+      <h2 class="section-title">Recent Badges</h2>
+      <div class="badges-row" id="recentBadges"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>ScienceQuest &mdash; STEM Learning for Ages 10+ &mdash; <a href="progress.html">View Full Progress</a></p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/app-home.js"></script>
+</body>
+</html>

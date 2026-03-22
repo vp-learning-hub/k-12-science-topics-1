@@ -1,0 +1,119 @@
+/* ===================================================
+   SCIENCEQUEST - animations.css
+   Keyframes and transition animations
+   =================================================== */
+
+@keyframes floatParticle {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(-30px) rotate(180deg); }
+}
+
+@keyframes orbitSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideOutRight {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(100px); }
+}
+
+@keyframes cardSlideIn {
+  from { opacity: 0; transform: translateX(60px) scale(0.96); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes cardSlideOut {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to { opacity: 0; transform: translateX(-60px) scale(0.96); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes firework {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--fx, 30px), var(--fy, -60px)) scale(0); opacity: 0; }
+}
+
+@keyframes streakPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); color: var(--color-accent); }
+  100% { transform: scale(1); }
+}
+
+/* Utility animation classes */
+.anim-bounce-in {
+  animation: bounceIn 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.anim-fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+.anim-fade-in-up {
+  animation: fadeInUp 0.4s ease;
+}
+
+.streak-pop {
+  animation: streakPop 0.4s ease;
+}
+
+/* Fireworks for session complete */
+.session-complete__fireworks {
+  position: relative;
+  height: 80px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.fw-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  animation: firework 0.8s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

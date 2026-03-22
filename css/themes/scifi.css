@@ -1,0 +1,361 @@
+/* ===================================================
+   SCIENCEQUEST - themes/scifi.css
+   Modern Sci-Fi theme: dark, electric blues, neons
+   =================================================== */
+
+[data-theme="scifi"] {
+  /* Base colors */
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-primary-dark: #4f46e5;
+  --color-secondary: #06b6d4;
+  --color-accent: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* Surfaces */
+  --color-background: #0a0e1a;
+  --color-surface: #111827;
+  --color-card: #1a2235;
+  --color-border: #1e3a5f;
+
+  /* Text */
+  --color-text: #e2e8f0;
+  --color-text-light: #94a3b8;
+  --color-text-muted: #475569;
+
+  /* Feedback */
+  --color-correct: #22c55e;
+  --color-correct-bg: #052e16;
+  --color-correct-border: #166534;
+  --color-incorrect: #f59e0b;
+  --color-incorrect-bg: #1c1200;
+  --color-incorrect-border: #92400e;
+}
+
+/* Body glow background */
+[data-theme="scifi"] body {
+  background: var(--color-background);
+  background-image:
+    radial-gradient(ellipse at 15% 30%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 70%, rgba(6, 182, 212, 0.06) 0%, transparent 60%);
+}
+
+/* Particles in sci-fi theme */
+[data-theme="scifi"] .particle {
+  background: var(--color-primary);
+}
+
+[data-theme="scifi"] .particle:nth-child(even) {
+  background: var(--color-secondary);
+}
+
+/* Header glow */
+[data-theme="scifi"] .site-header,
+[data-theme="scifi"] .learn-header {
+  background: rgba(17, 24, 39, 0.85);
+  border-bottom-color: var(--color-border);
+  box-shadow: 0 1px 0 rgba(99, 102, 241, 0.3), 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-theme="scifi"] .session-progress,
+[data-theme="scifi"] .gamification-bar {
+  background: rgba(17, 24, 39, 0.9);
+  border-bottom-color: var(--color-border);
+}
+
+/* Hero badge glow */
+[data-theme="scifi"] .hero-badge {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+}
+
+/* Gradient text */
+[data-theme="scifi"] .gradient-text {
+  background: linear-gradient(135deg, #818cf8, #06b6d4, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Stat chips */
+[data-theme="scifi"] .stat-chip {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.15);
+}
+
+/* Orbit rings with glow */
+[data-theme="scifi"] .ring-1 {
+  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+}
+
+[data-theme="scifi"] .ring-2 {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.2);
+}
+
+[data-theme="scifi"] .ring-3 {
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+/* Topic cards */
+[data-theme="scifi"] .topic-card {
+  background: var(--color-card);
+  border-color: var(--color-border);
+  box-shadow: 0 0 0 1px rgba(99,102,241,0.08), var(--shadow-card);
+}
+
+[data-theme="scifi"] .topic-card:not(.topic-card--locked):hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25), var(--shadow-lg);
+}
+
+[data-theme="scifi"] .topic-card__glow {
+  background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+  opacity: 0.04;
+}
+
+/* Cards */
+[data-theme="scifi"] .card {
+  background: var(--color-card);
+  border-color: var(--color-border);
+  box-shadow: 0 0 24px rgba(99,102,241,0.1), var(--shadow-card);
+}
+
+[data-theme="scifi"] .card__visual {
+  background: rgba(10, 14, 26, 0.6);
+  border-color: var(--color-border);
+}
+
+[data-theme="scifi"] .card__keypoints {
+  background: rgba(10, 14, 26, 0.4);
+}
+
+[data-theme="scifi"] .card--concept .card__label {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+}
+
+[data-theme="scifi"] .card--practice .card__label {
+  background: rgba(6, 182, 212, 0.2);
+  color: #67e8f9;
+}
+
+[data-theme="scifi"] .card--fact .card__label {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+}
+
+/* Options */
+[data-theme="scifi"] .option-btn,
+[data-theme="scifi"] .tf-btn {
+  background: rgba(10, 14, 26, 0.6);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+[data-theme="scifi"] .option-btn:hover:not(:disabled) {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--color-primary);
+}
+
+[data-theme="scifi"] .option-btn.option--selected {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: var(--color-primary);
+}
+
+[data-theme="scifi"] .option-btn.option--correct,
+[data-theme="scifi"] .tf-btn.option--correct {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: var(--color-correct);
+  color: #86efac;
+}
+
+[data-theme="scifi"] .option-btn.option--incorrect,
+[data-theme="scifi"] .tf-btn.option--incorrect {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: var(--color-danger);
+  color: #fca5a5;
+}
+
+/* Feedback banners dark */
+[data-theme="scifi"] .feedback-banner--correct {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: #166534;
+  color: #86efac;
+}
+
+[data-theme="scifi"] .feedback-banner--incorrect {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: #92400e;
+  color: #fcd34d;
+}
+
+/* Hint */
+[data-theme="scifi"] .hint-text {
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+}
+
+/* Fill blank input */
+[data-theme="scifi"] .blank-input {
+  background: rgba(10, 14, 26, 0.6);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+[data-theme="scifi"] .blank-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+
+/* Fact card */
+[data-theme="scifi"] .card--fact {
+  background: linear-gradient(135deg, var(--color-card), rgba(245, 158, 11, 0.04));
+}
+
+[data-theme="scifi"] .fact-fun-question {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+[data-theme="scifi"] .fact-fun-question__label {
+  color: #fcd34d;
+}
+
+[data-theme="scifi"] .fact-fun-input {
+  background: rgba(10, 14, 26, 0.6);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: var(--color-text);
+}
+
+[data-theme="scifi"] .fact-answer {
+  color: #fcd34d;
+}
+
+/* Buttons in dark */
+[data-theme="scifi"] .btn--secondary {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+[data-theme="scifi"] .btn--ghost {
+  color: var(--color-text-light);
+}
+
+[data-theme="scifi"] .btn--ghost:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--color-text);
+}
+
+/* Tags */
+[data-theme="scifi"] .tag {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--color-border);
+  color: var(--color-text-light);
+}
+
+/* Overview cards */
+[data-theme="scifi"] .overview-card {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: 0 0 12px rgba(99,102,241,0.08);
+}
+
+/* Topic progress items */
+[data-theme="scifi"] .topic-progress-item {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+/* Badge */
+[data-theme="scifi"] .badge {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+[data-theme="scifi"] .badge--earned {
+  border-color: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-surface), rgba(245,158,11,0.08));
+  box-shadow: 0 0 12px rgba(245,158,11,0.2);
+}
+
+/* Achievement popup */
+[data-theme="scifi"] .achievement-popup {
+  background: var(--color-surface);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 20px rgba(245,158,11,0.3), var(--shadow-lg);
+}
+
+/* Settings panel */
+[data-theme="scifi"] .settings-panel__content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+/* Session complete */
+[data-theme="scifi"] .session-complete {
+  background: var(--color-background);
+}
+
+[data-theme="scifi"] .complete-stat {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+/* Footer */
+[data-theme="scifi"] .site-footer {
+  border-top-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* Lock toggle button */
+[data-theme="scifi"] #lockToggle {
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="scifi"] #lockToggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-light);
+}
+
+/* Keypoints border */
+[data-theme="scifi"] .card__keypoints {
+  border-left-color: var(--color-primary);
+}
+
+/* Danger section */
+[data-theme="scifi"] .danger-section {
+  background: var(--color-surface);
+  border-color: rgba(239,68,68,0.3);
+}
+
+/* Neon glow on primary buttons */
+[data-theme="scifi"] .btn--primary {
+  background: var(--color-primary);
+  box-shadow: 0 0 12px rgba(99,102,241,0.4), var(--shadow-button);
+}
+
+[data-theme="scifi"] .btn--primary:hover {
+  box-shadow: 0 0 20px rgba(99,102,241,0.6), var(--shadow-lg);
+}
+
+/* Scrollbar */
+[data-theme="scifi"] ::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-theme="scifi"] ::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+[data-theme="scifi"] ::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+[data-theme="scifi"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

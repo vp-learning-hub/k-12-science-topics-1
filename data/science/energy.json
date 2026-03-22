@@ -1,0 +1,411 @@
+[
+  {
+    "id": "science-energy-001",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 1,
+    "order": 1,
+    "content": {
+      "title": "What Is Energy?",
+      "explanation": "Energy is the ability to do work or cause change. When you kick a ball, chemical energy in your muscles becomes kinetic energy in the ball. Energy can change form, but it never disappears!",
+      "visual": "⚡",
+      "visualAlt": "Lightning bolt representing energy",
+      "keyPoints": [
+        "Energy is the ability to do work",
+        "Energy can transform from one form to another",
+        "Energy is never created or destroyed (Law of Conservation)"
+      ]
+    },
+    "metadata": { "estimatedTime": 30, "prerequisites": [] }
+  },
+  {
+    "id": "science-energy-002",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 1,
+    "order": 2,
+    "content": {
+      "title": "Kinetic vs Potential Energy",
+      "explanation": "A ball rolling down a hill has kinetic energy - energy of motion. A ball at the top of a hill has potential energy - stored energy waiting to be released. As the ball rolls down, potential energy converts to kinetic energy!",
+      "visual": "⛰️🎳",
+      "visualAlt": "Ball at top of hill (potential) rolling down (kinetic)",
+      "keyPoints": [
+        "Kinetic energy: energy of moving objects",
+        "Potential energy: stored energy (position, springs, chemicals)",
+        "Higher position = more gravitational potential energy",
+        "Faster speed = more kinetic energy"
+      ]
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-p001",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 1,
+    "order": 3,
+    "content": {
+      "question": "A stretched rubber band has what type of energy?",
+      "questionType": "multiple-choice",
+      "options": ["Kinetic energy", "Potential energy", "Chemical energy", "Nuclear energy"],
+      "correct": ["Potential energy"],
+      "acceptMultiple": false,
+      "hint": "Is the rubber band moving? Or is it storing energy, ready to be released?",
+      "explanationOnCorrect": "Yes! Elastic potential energy is stored in the stretched band, waiting to be released as kinetic energy.",
+      "explanationOnWrong": "Since the rubber band isn't moving yet, it has potential energy - stored energy ready to go."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-energy-002"] }
+  },
+  {
+    "id": "science-energy-p002",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 1,
+    "order": 4,
+    "content": {
+      "question": "True or False: When you eat food, you gain chemical potential energy that your body can use.",
+      "questionType": "true-false",
+      "correct": ["true"],
+      "acceptMultiple": false,
+      "hint": "Think about where your muscles get their energy from.",
+      "explanationOnCorrect": "True! Food contains chemical potential energy stored in molecules. Your body breaks it down to power everything you do.",
+      "explanationOnWrong": "Food contains chemical potential energy in its molecules. Your body converts it to kinetic energy for movement, heat, and more."
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-p003",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 1,
+    "order": 5,
+    "content": {
+      "question": "A boulder sits at the top of a cliff. As it falls, its potential energy ___.",
+      "questionType": "multiple-choice",
+      "options": ["Increases", "Decreases and becomes kinetic energy", "Stays the same", "Disappears completely"],
+      "correct": ["Decreases and becomes kinetic energy"],
+      "acceptMultiple": false,
+      "hint": "Energy doesn't disappear - it transforms. What is the boulder gaining as it falls?",
+      "explanationOnCorrect": "Exactly! Potential energy converts to kinetic energy as the boulder falls and speeds up.",
+      "explanationOnWrong": "As the boulder falls, gravitational potential energy converts into kinetic energy (motion). Energy is never destroyed!"
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-002"] }
+  },
+  {
+    "id": "science-energy-003",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 2,
+    "order": 6,
+    "content": {
+      "title": "Gravity and Gravitational Force",
+      "explanation": "Gravity is a force that pulls objects with mass toward each other. The bigger the mass, the stronger the pull. Earth's gravity pulls you toward the ground. The Moon's gravity is 6 times weaker - that's why astronauts can jump so high on the Moon!",
+      "visual": "🌍",
+      "visualAlt": "Earth pulling objects toward it with gravity arrows",
+      "keyPoints": [
+        "Gravity is an attractive force between all objects with mass",
+        "More mass = stronger gravitational pull",
+        "Earth's gravity accelerates objects at 9.8 m/s²",
+        "Weight = mass × gravitational acceleration"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-energy-002"] }
+  },
+  {
+    "id": "science-energy-004",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 2,
+    "order": 7,
+    "content": {
+      "title": "Heat and Temperature",
+      "explanation": "Temperature measures how fast particles are moving. Heat is the total energy of all those moving particles. A cup of boiling water has a higher temperature than a lake, but the lake has more total heat energy because it has billions more particles!",
+      "visual": "🌡️",
+      "visualAlt": "Thermometer showing temperature concept",
+      "keyPoints": [
+        "Temperature = average kinetic energy of particles",
+        "Heat = total thermal energy in a substance",
+        "Heat transfers from hot to cold objects",
+        "Measured in Celsius (°C) or Kelvin (K) in science"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-p004",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 2,
+    "order": 8,
+    "content": {
+      "question": "You weigh 50 kg on Earth. On the Moon (1/6 gravity), you would weigh approximately:",
+      "questionType": "multiple-choice",
+      "options": ["50 kg", "300 kg", "About 8.3 kg", "0 kg"],
+      "correct": ["About 8.3 kg"],
+      "acceptMultiple": false,
+      "hint": "If Moon gravity is 1/6 of Earth's, divide your Earth weight by 6.",
+      "explanationOnCorrect": "Yes! 50 ÷ 6 ≈ 8.3 kg. You'd be much lighter but your mass stays the same - mass is how much 'stuff' you're made of.",
+      "explanationOnWrong": "Moon gravity is 1/6 of Earth's. So 50 ÷ 6 ≈ 8.3 kg. Note: your mass stays 50 kg - only your weight changes!"
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-energy-003"] }
+  },
+  {
+    "id": "science-energy-p005",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 2,
+    "order": 9,
+    "content": {
+      "question": "Heat naturally flows from ___ objects to ___ objects.",
+      "questionType": "multiple-choice",
+      "options": ["Cold → Hot", "Hot → Cold", "Small → Large", "Dense → Less Dense"],
+      "correct": ["Hot → Cold"],
+      "acceptMultiple": false,
+      "hint": "Put an ice cube in warm water. Which way does the temperature change?",
+      "explanationOnCorrect": "Correct! Heat always flows from hotter to cooler objects until they reach the same temperature (thermal equilibrium).",
+      "explanationOnWrong": "Heat flows from hot to cold. That's why ice cools your drink - heat from the drink flows into the ice."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-energy-004"] }
+  },
+  {
+    "id": "science-energy-p006",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 2,
+    "order": 10,
+    "content": {
+      "question": "Which has MORE total heat energy?",
+      "questionType": "multiple-choice",
+      "options": [
+        "A cup of boiling water (100°C)",
+        "A swimming pool at 25°C",
+        "They have the same heat energy",
+        "Cannot be determined"
+      ],
+      "correct": ["A swimming pool at 25°C"],
+      "acceptMultiple": false,
+      "hint": "Temperature is average particle energy. Heat is TOTAL energy. Which has more particles?",
+      "explanationOnCorrect": "Yes! Even though the cup is hotter, the pool has billions more particles. More particles × their energy = more total heat!",
+      "explanationOnWrong": "The pool is cooler, but it has trillions more particles. Total heat = all particles × their energy, so the pool wins!"
+    },
+    "metadata": { "estimatedTime": 55, "prerequisites": ["science-energy-004"] }
+  },
+  {
+    "id": "science-energy-005",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 3,
+    "order": 11,
+    "content": {
+      "title": "Electricity and Electric Circuits",
+      "explanation": "Electricity is the flow of electrons through a material. When electrons flow through a wire, they carry electrical energy. A circuit gives electrons a complete path to flow. Break the circuit and electricity stops - that's how a light switch works!",
+      "visual": "💡",
+      "visualAlt": "Simple circuit with battery and light bulb",
+      "keyPoints": [
+        "Electricity = flow of electrons",
+        "A circuit needs a complete path for electrons",
+        "Voltage is the 'push' driving electrons",
+        "Current is the amount of electron flow"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-006",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 3,
+    "order": 12,
+    "content": {
+      "title": "Light and the Electromagnetic Spectrum",
+      "explanation": "Light is electromagnetic energy that travels in waves. Visible light is just a tiny slice of the electromagnetic spectrum. Radio waves, microwaves, infrared (heat), X-rays, and gamma rays are all the same type of energy but with different wavelengths!",
+      "visual": "🌈",
+      "visualAlt": "Rainbow showing visible light spectrum",
+      "keyPoints": [
+        "Light travels at 300,000 km per second",
+        "Different colors have different wavelengths (red = long, violet = short)",
+        "Radio waves, microwaves, X-rays are all electromagnetic waves",
+        "Higher frequency = more energy (X-rays have more than radio waves)"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-p007",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 3,
+    "order": 13,
+    "content": {
+      "question": "A light bulb converts electrical energy mainly into:",
+      "questionType": "multiple-choice",
+      "options": ["Only light energy", "Only heat energy", "Light and heat energy", "Chemical energy"],
+      "correct": ["Light and heat energy"],
+      "acceptMultiple": false,
+      "hint": "Touch a light bulb after it's been on a while. What do you notice?",
+      "explanationOnCorrect": "Correct! Light bulbs convert electricity into light AND heat. That's why they get warm. LED bulbs are better because they waste less energy as heat.",
+      "explanationOnWrong": "Light bulbs produce both light AND heat. That's why incandescent bulbs feel hot. LEDs produce less heat."
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-005"] }
+  },
+  {
+    "id": "science-energy-p008",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 3,
+    "order": 14,
+    "content": {
+      "question": "Which type of electromagnetic wave has the MOST energy?",
+      "questionType": "multiple-choice",
+      "options": ["Radio waves", "Visible light", "Microwaves", "Gamma rays"],
+      "correct": ["Gamma rays"],
+      "acceptMultiple": false,
+      "hint": "Gamma rays can pass through most materials and are used in cancer treatment. Which does that suggest about their energy?",
+      "explanationOnCorrect": "Yes! Gamma rays have the shortest wavelength and highest frequency, giving them the most energy. They're produced in nuclear reactions.",
+      "explanationOnWrong": "Gamma rays have the highest frequency and shortest wavelength in the electromagnetic spectrum = most energy."
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-006"] }
+  },
+  {
+    "id": "science-energy-007",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 4,
+    "order": 15,
+    "content": {
+      "title": "Newton's Three Laws of Motion",
+      "explanation": "Isaac Newton figured out three rules for how forces and motion work. Law 1: Objects keep moving unless a force stops them (inertia). Law 2: Force = mass × acceleration. Law 3: Every action has an equal and opposite reaction - that's how rockets work!",
+      "visual": "🚀",
+      "visualAlt": "Rocket launching using action-reaction principle",
+      "keyPoints": [
+        "1st Law (Inertia): objects keep their state unless a force acts on them",
+        "2nd Law: F = ma (force = mass × acceleration)",
+        "3rd Law: For every action, there's an equal and opposite reaction",
+        "Rockets work by pushing gas down, which pushes the rocket up"
+      ]
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-energy-003"] }
+  },
+  {
+    "id": "science-energy-p009",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 4,
+    "order": 16,
+    "content": {
+      "question": "A rocket pushes hot gases down. What happens to the rocket according to Newton's 3rd Law?",
+      "questionType": "multiple-choice",
+      "options": [
+        "The rocket slows down",
+        "The rocket is pushed upward with equal force",
+        "The rocket stays still",
+        "The rocket moves sideways"
+      ],
+      "correct": ["The rocket is pushed upward with equal force"],
+      "acceptMultiple": false,
+      "hint": "For every ACTION there is an equal and OPPOSITE reaction...",
+      "explanationOnCorrect": "Exactly! The rocket pushes gases DOWN, so gases push the rocket UP. That's Newton's 3rd Law in action - literally!",
+      "explanationOnWrong": "Newton's 3rd Law: every action = equal and opposite reaction. Gas goes down → rocket goes up!"
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-007"] }
+  },
+  {
+    "id": "science-energy-p010",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 4,
+    "order": 17,
+    "content": {
+      "question": "Using F = ma: if a 2 kg ball accelerates at 5 m/s², what force is applied?",
+      "questionType": "multiple-choice",
+      "options": ["2.5 N", "7 N", "10 N", "3 N"],
+      "correct": ["10 N"],
+      "acceptMultiple": false,
+      "hint": "F = m × a. Multiply mass times acceleration.",
+      "explanationOnCorrect": "F = 2 kg × 5 m/s² = 10 N (Newtons). Newton's 2nd Law lets us calculate exactly how much force is needed!",
+      "explanationOnWrong": "F = m × a. So F = 2 × 5 = 10 N. Newtons (N) are the unit of force."
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-energy-007"] }
+  },
+  {
+    "id": "science-energy-008",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 5,
+    "order": 18,
+    "content": {
+      "title": "Renewable vs Non-Renewable Energy",
+      "explanation": "Fossil fuels (coal, oil, gas) are non-renewable - once burned, they're gone forever, and they took millions of years to form. Solar, wind, and hydroelectric power are renewable - they replenish naturally. Switching to renewables is key to fighting climate change!",
+      "visual": "☀️🌬️",
+      "visualAlt": "Solar panel and wind turbines",
+      "keyPoints": [
+        "Fossil fuels: coal, oil, natural gas - take millions of years to form",
+        "Burning fossil fuels releases CO₂ causing climate change",
+        "Renewable: solar, wind, hydroelectric, geothermal",
+        "Solar and wind are fastest growing energy sources"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-energy-001"] }
+  },
+  {
+    "id": "science-energy-p011",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 5,
+    "order": 19,
+    "content": {
+      "question": "Which energy sources are renewable? (Select all that apply)",
+      "questionType": "multiple-choice",
+      "options": ["Coal", "Solar power", "Wind power", "Natural gas"],
+      "correct": ["Solar power", "Wind power"],
+      "acceptMultiple": true,
+      "hint": "Can the Sun stop shining or wind stop blowing? Can we make more coal quickly?",
+      "explanationOnCorrect": "Yes! Solar and wind energy replenish naturally and constantly. Coal and natural gas are finite and take millions of years to form.",
+      "explanationOnWrong": "Renewable means it naturally replenishes. The Sun keeps shining and wind keeps blowing. Coal and gas are finite fossil fuels."
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-energy-008"] }
+  },
+  {
+    "id": "science-energy-p012",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "energy",
+    "difficulty": 5,
+    "order": 20,
+    "content": {
+      "question": "Why do burning fossil fuels contribute to climate change?",
+      "questionType": "multiple-choice",
+      "options": [
+        "They release CO₂ that traps heat in the atmosphere",
+        "They make the Sun shine brighter",
+        "They cool the Earth's core",
+        "They remove oxygen from the air"
+      ],
+      "correct": ["They release CO₂ that traps heat in the atmosphere"],
+      "acceptMultiple": false,
+      "hint": "CO₂ acts like a blanket around Earth. What does a blanket do?",
+      "explanationOnCorrect": "Exactly! CO₂ and other greenhouse gases trap heat from the Sun, causing Earth's average temperature to rise.",
+      "explanationOnWrong": "Burning fossil fuels releases CO₂. In the atmosphere, CO₂ traps heat like a blanket, warming the planet."
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-energy-008"] }
+  }
+]

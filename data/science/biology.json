@@ -1,0 +1,420 @@
+[
+  {
+    "id": "science-biology-001",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 1,
+    "order": 1,
+    "content": {
+      "title": "The Cell: Life's Basic Unit",
+      "explanation": "Your body is made of about 37 trillion cells - tiny living units that do all the work of keeping you alive. Cells eat, breathe, grow, and make copies of themselves. Some organisms like bacteria are just one cell. You started as just ONE cell!",
+      "visual": "🔬",
+      "visualAlt": "Cell diagram showing nucleus and organelles",
+      "keyPoints": [
+        "All living things are made of cells",
+        "Cells carry out all life functions",
+        "Unicellular = one cell (bacteria), Multicellular = many (humans)",
+        "Your body has about 37 trillion cells"
+      ]
+    },
+    "metadata": { "estimatedTime": 30, "prerequisites": [] }
+  },
+  {
+    "id": "science-biology-002",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 1,
+    "order": 2,
+    "content": {
+      "title": "Cell Parts and Their Jobs",
+      "explanation": "Think of a cell like a tiny city. The nucleus is the city hall (controls everything). The mitochondria are the power plants (make energy). The cell membrane is the city wall (controls what enters and exits). Each part has a critical job!",
+      "visual": "🏙️",
+      "visualAlt": "Cell with labeled organelles",
+      "keyPoints": [
+        "Nucleus: control center, contains DNA",
+        "Mitochondria: make energy from food (ATP)",
+        "Cell membrane: controls what enters/exits",
+        "Ribosomes: make proteins",
+        "Vacuole: stores water and waste"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-001"] }
+  },
+  {
+    "id": "science-biology-p001",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 1,
+    "order": 3,
+    "content": {
+      "question": "Which organelle is called the 'powerhouse of the cell'?",
+      "questionType": "multiple-choice",
+      "options": ["Nucleus", "Mitochondria", "Cell membrane", "Ribosome"],
+      "correct": ["Mitochondria"],
+      "acceptMultiple": false,
+      "hint": "It produces energy (ATP) for the cell from food molecules.",
+      "explanationOnCorrect": "The mitochondria! It converts food (glucose) into ATP energy that powers all cell activities. One cell can have thousands of mitochondria!",
+      "explanationOnWrong": "The mitochondria are the powerhouses. They produce ATP energy from glucose and oxygen."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-002"] }
+  },
+  {
+    "id": "science-biology-p002",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 1,
+    "order": 4,
+    "content": {
+      "question": "True or False: Bacteria are multicellular organisms.",
+      "questionType": "true-false",
+      "correct": ["false"],
+      "acceptMultiple": false,
+      "hint": "How many cells does a bacterium have?",
+      "explanationOnCorrect": "False is correct! Bacteria are unicellular - each bacterium is just one single cell doing everything by itself.",
+      "explanationOnWrong": "Bacteria are unicellular - they consist of just ONE cell. You, however, are multicellular with trillions of cells!"
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-biology-001"] }
+  },
+  {
+    "id": "science-biology-p003",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 1,
+    "order": 5,
+    "content": {
+      "question": "What is the main job of the cell membrane?",
+      "questionType": "multiple-choice",
+      "options": [
+        "Make energy for the cell",
+        "Control what enters and exits the cell",
+        "Store the cell's DNA",
+        "Produce proteins"
+      ],
+      "correct": ["Control what enters and exits the cell"],
+      "acceptMultiple": false,
+      "hint": "Think of a city wall or security checkpoint.",
+      "explanationOnCorrect": "The cell membrane is a selective barrier - it lets nutrients in and waste products out, protecting the cell!",
+      "explanationOnWrong": "The membrane acts like a wall with gates - it controls traffic in and out of the cell."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-002"] }
+  },
+  {
+    "id": "science-biology-003",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 2,
+    "order": 6,
+    "content": {
+      "title": "DNA: The Blueprint of Life",
+      "explanation": "DNA is a long molecule inside every cell's nucleus. It contains instructions for building and running your entire body - like a recipe book with 3 billion 'letters'. DNA is organized into 46 chromosomes. Half came from your mother, half from your father!",
+      "visual": "🧬",
+      "visualAlt": "DNA double helix structure",
+      "keyPoints": [
+        "DNA = deoxyribonucleic acid",
+        "DNA contains genes - instructions for building proteins",
+        "Humans have ~3 billion DNA base pairs",
+        "DNA is organized into 46 chromosomes (23 pairs)",
+        "You inherit 23 chromosomes from each parent"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-002"] }
+  },
+  {
+    "id": "science-biology-004",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 2,
+    "order": 7,
+    "content": {
+      "title": "Photosynthesis: Plants Eat Sunlight",
+      "explanation": "Plants make their own food from sunlight, water, and carbon dioxide. This process is called photosynthesis. The green chemical chlorophyll in leaves captures sunlight and uses that energy to combine CO₂ + water into glucose (sugar) + oxygen. You breathe the oxygen plants release!",
+      "visual": "🌿",
+      "visualAlt": "Plant showing sunlight, CO2 in and O2 out",
+      "keyPoints": [
+        "Equation: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂",
+        "Chlorophyll (green pigment) captures light energy",
+        "Glucose (sugar) stores the energy",
+        "Oxygen is released as a byproduct - the air we breathe!"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-001"] }
+  },
+  {
+    "id": "science-biology-p004",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 2,
+    "order": 8,
+    "content": {
+      "question": "How many chromosomes do humans normally have?",
+      "questionType": "multiple-choice",
+      "options": ["23", "46", "92", "64"],
+      "correct": ["46"],
+      "acceptMultiple": false,
+      "hint": "You get 23 from mom + 23 from dad = ?",
+      "explanationOnCorrect": "Correct! 23 from each parent = 46 total, arranged in 23 pairs. These 46 chromosomes contain all your genetic instructions.",
+      "explanationOnWrong": "You receive 23 chromosomes from each parent, totaling 46. They're organized as 23 matching pairs."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-003"] }
+  },
+  {
+    "id": "science-biology-p005",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 2,
+    "order": 9,
+    "content": {
+      "question": "What does a plant release as a byproduct of photosynthesis?",
+      "questionType": "multiple-choice",
+      "options": ["Carbon dioxide", "Oxygen", "Glucose", "Water vapor"],
+      "correct": ["Oxygen"],
+      "acceptMultiple": false,
+      "hint": "Plants take in CO₂ and water. The air we need to breathe comes from somewhere...",
+      "explanationOnCorrect": "Yes! Plants release oxygen as a byproduct. All the oxygen in Earth's atmosphere was produced by plants and algae through photosynthesis!",
+      "explanationOnWrong": "Photosynthesis: CO₂ + H₂O → glucose + OXYGEN. Plants release the oxygen we breathe!"
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-004"] }
+  },
+  {
+    "id": "science-biology-p006",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 2,
+    "order": 10,
+    "content": {
+      "question": "Fill in the blank: DNA is stored in the ___ of a cell.",
+      "questionType": "fill-blank",
+      "correct": ["nucleus"],
+      "acceptedVariants": ["nucleus", "the nucleus"],
+      "hint": "It's the cell's control center...",
+      "explanationOnCorrect": "Correct! The nucleus houses the cell's DNA, keeping it protected and organized into chromosomes.",
+      "explanationOnWrong": "DNA is kept in the nucleus - the cell's control center. The nucleus protects this precious genetic information."
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-biology-003"] }
+  },
+  {
+    "id": "science-biology-005",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 3,
+    "order": 11,
+    "content": {
+      "title": "The Human Body Systems",
+      "explanation": "Your body has 11 organ systems all working together. The circulatory system pumps blood. The respiratory system breathes. The nervous system controls everything using electrical signals. The digestive system breaks down food into fuel. They all cooperate to keep you alive!",
+      "visual": "🫀",
+      "visualAlt": "Human body showing organ systems",
+      "keyPoints": [
+        "Circulatory: heart + blood vessels deliver oxygen and nutrients",
+        "Respiratory: lungs exchange O₂ for CO₂",
+        "Nervous: brain + nerves control everything",
+        "Digestive: breaks food into nutrients",
+        "Immune: defends against disease"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-001"] }
+  },
+  {
+    "id": "science-biology-006",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 3,
+    "order": 12,
+    "content": {
+      "title": "Ecosystems and Food Webs",
+      "explanation": "An ecosystem is a community of living things and their environment. Energy flows through ecosystems in food webs. Plants (producers) use sunlight. Herbivores (primary consumers) eat plants. Carnivores (secondary consumers) eat herbivores. Decomposers recycle everything back to soil!",
+      "visual": "🌳🦌🐺",
+      "visualAlt": "Food web showing producers, consumers, decomposers",
+      "keyPoints": [
+        "Producers: plants make their own food via photosynthesis",
+        "Primary consumers: eat plants (rabbits, deer, cows)",
+        "Secondary consumers: eat herbivores (foxes, wolves)",
+        "Decomposers: break down dead matter (fungi, bacteria)",
+        "Energy decreases at each level (only 10% transfers up)"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-004"] }
+  },
+  {
+    "id": "science-biology-p007",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 3,
+    "order": 13,
+    "content": {
+      "question": "The circulatory system's main job is to:",
+      "questionType": "multiple-choice",
+      "options": [
+        "Digest food",
+        "Deliver oxygen and nutrients to all body cells",
+        "Filter out infections",
+        "Control movement"
+      ],
+      "correct": ["Deliver oxygen and nutrients to all body cells"],
+      "acceptMultiple": false,
+      "hint": "Think about what your heart pumps through your blood vessels.",
+      "explanationOnCorrect": "Yes! Your heart pumps blood through a network of vessels, delivering oxygen and nutrients to every cell and removing waste.",
+      "explanationOnWrong": "The circulatory system (heart + blood vessels) transports oxygen, nutrients, hormones, and removes waste from every cell."
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-005"] }
+  },
+  {
+    "id": "science-biology-p008",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 3,
+    "order": 14,
+    "content": {
+      "question": "In a food chain, a deer eating grass makes the deer a:",
+      "questionType": "multiple-choice",
+      "options": ["Producer", "Primary consumer", "Secondary consumer", "Decomposer"],
+      "correct": ["Primary consumer"],
+      "acceptMultiple": false,
+      "hint": "Grass is the producer. The deer eats the producer directly.",
+      "explanationOnCorrect": "Correct! The deer is the first animal in the chain that eats a producer (grass), making it a primary consumer.",
+      "explanationOnWrong": "The grass produces its own food (producer). The deer eats the producer directly = primary consumer."
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-006"] }
+  },
+  {
+    "id": "science-biology-007",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 4,
+    "order": 15,
+    "content": {
+      "title": "Evolution and Natural Selection",
+      "explanation": "Charles Darwin discovered that species change over time through natural selection. Individuals with traits that help them survive and reproduce pass those traits to offspring. Over millions of years, this causes species to change dramatically - even splitting into new species!",
+      "visual": "🦕🦎",
+      "visualAlt": "Dinosaur evolving into modern bird",
+      "keyPoints": [
+        "Natural selection: best-adapted individuals survive and reproduce",
+        "Traits that help survival are passed on more",
+        "Over millions of generations, species change",
+        "All life on Earth shares a common ancestor"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-biology-003"] }
+  },
+  {
+    "id": "science-biology-p009",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 4,
+    "order": 16,
+    "content": {
+      "question": "In a population of mice, darker fur makes them harder for hawks to spot. Over generations, you'd expect:",
+      "questionType": "multiple-choice",
+      "options": [
+        "More light-furred mice",
+        "More dark-furred mice",
+        "No change in fur color",
+        "All mice to become bald"
+      ],
+      "correct": ["More dark-furred mice"],
+      "acceptMultiple": false,
+      "hint": "Which mice survive longer to have offspring?",
+      "explanationOnCorrect": "Yes! Dark mice survive more often, reproduce more, and pass on dark fur genes. Over generations, dark fur becomes more common.",
+      "explanationOnWrong": "Dark mice are harder to catch, so they survive and reproduce more. Their genes spread through the population - natural selection!"
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-biology-007"] }
+  },
+  {
+    "id": "science-biology-p010",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 4,
+    "order": 17,
+    "content": {
+      "question": "What did Charles Darwin call the process where the best-adapted individuals survive?",
+      "questionType": "fill-blank",
+      "correct": ["natural selection"],
+      "acceptedVariants": ["natural selection", "Natural Selection"],
+      "hint": "Darwin's key insight about how species change over time...",
+      "explanationOnCorrect": "Natural selection! It's 'natural' because nature selects which traits help survival - no one plans it, it just happens.",
+      "explanationOnWrong": "Darwin called it 'natural selection' - nature 'selects' the best-adapted individuals to survive and reproduce."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-biology-007"] }
+  },
+  {
+    "id": "science-biology-008",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 5,
+    "order": 18,
+    "content": {
+      "title": "Genetics: Dominant and Recessive Traits",
+      "explanation": "You have two copies of each gene - one from each parent. Some genes are dominant (they show up even with one copy). Others are recessive (both copies needed to show). Brown eyes are dominant over blue eyes - that's why two brown-eyed parents can still have a blue-eyed child!",
+      "visual": "👁️",
+      "visualAlt": "Punnett square showing eye color genetics",
+      "keyPoints": [
+        "Genes come in pairs (alleles)",
+        "Dominant alleles show their trait with just ONE copy",
+        "Recessive alleles need TWO copies to show",
+        "Capital = dominant (B), lowercase = recessive (b)",
+        "Bb = brown eyes (dominant wins); bb = blue eyes"
+      ]
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-biology-003"] }
+  },
+  {
+    "id": "science-biology-p011",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 5,
+    "order": 19,
+    "content": {
+      "question": "A child has genotype 'Bb' for hair color (B = brown, dominant; b = blonde, recessive). What hair color do they have?",
+      "questionType": "multiple-choice",
+      "options": ["Blonde", "Brown", "Half brown, half blonde", "Neither color"],
+      "correct": ["Brown"],
+      "acceptMultiple": false,
+      "hint": "They have one dominant allele (B). Dominant means it shows up with just one copy.",
+      "explanationOnCorrect": "Brown! The dominant B allele overrides the recessive b. Just one copy of B is enough to show brown hair.",
+      "explanationOnWrong": "With genotype Bb, the dominant B allele takes effect. Brown is dominant, so they have brown hair."
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-biology-008"] }
+  },
+  {
+    "id": "science-biology-p012",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "biology",
+    "difficulty": 5,
+    "order": 20,
+    "content": {
+      "question": "Which describes how two brown-eyed parents (each carrying one blue eye gene) can have a blue-eyed child?",
+      "questionType": "multiple-choice",
+      "options": [
+        "It cannot happen",
+        "Each parent passes their recessive 'b' allele, giving the child 'bb'",
+        "The child gets new genes from the environment",
+        "Blue eyes are dominant over brown"
+      ],
+      "correct": ["Each parent passes their recessive 'b' allele, giving the child 'bb'"],
+      "acceptMultiple": false,
+      "hint": "Each parent is Bb. What happens if both pass their 'b' allele to their child?",
+      "explanationOnCorrect": "Yes! If both Bb parents pass their 'b' allele, the child gets 'bb' (recessive from both sides) = blue eyes!",
+      "explanationOnWrong": "Both parents are Bb. If the child inherits 'b' from each parent, they get 'bb' = blue eyes. There's a 25% chance of this!"
+    },
+    "metadata": { "estimatedTime": 55, "prerequisites": ["science-biology-008"] }
+  }
+]

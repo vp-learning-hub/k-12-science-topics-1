@@ -1,0 +1,397 @@
+[
+  {
+    "id": "science-matter-001",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 1,
+    "order": 1,
+    "content": {
+      "title": "What Is Matter?",
+      "explanation": "Matter is everything around you - the air you breathe, the water you drink, even your own body! If it takes up space and has mass, it's matter.",
+      "visual": "🌍",
+      "visualAlt": "Planet Earth representing matter everywhere",
+      "keyPoints": [
+        "Matter takes up space (has volume)",
+        "Matter has mass (weight)",
+        "Almost everything you see is matter"
+      ]
+    },
+    "metadata": { "estimatedTime": 30, "prerequisites": [] }
+  },
+  {
+    "id": "science-matter-002",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 1,
+    "order": 2,
+    "content": {
+      "title": "Three States of Matter",
+      "explanation": "Matter can exist in three main forms. Solids keep their shape (like ice). Liquids flow and fill containers (like water). Gases spread out in all directions (like steam). The same substance can switch between all three!",
+      "visual": "🧊💧☁️",
+      "visualAlt": "Ice, water, and steam showing states of matter",
+      "keyPoints": [
+        "Solid: fixed shape, fixed volume",
+        "Liquid: flows, fixed volume but changes shape",
+        "Gas: spreads out, no fixed shape or volume"
+      ]
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-matter-001"] }
+  },
+  {
+    "id": "science-matter-p001",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 1,
+    "order": 3,
+    "content": {
+      "question": "Which of these is NOT considered matter?",
+      "questionType": "multiple-choice",
+      "options": ["Air", "Sunlight", "Water", "A rock"],
+      "correct": ["Sunlight"],
+      "acceptMultiple": false,
+      "hint": "Matter must have mass and take up space. Does light weigh anything?",
+      "explanationOnCorrect": "Correct! Sunlight (photons) has no mass and doesn't take up space, so it is not matter. Air, water, and rocks all have mass.",
+      "explanationOnWrong": "Think again. Matter needs mass and volume. Can you hold sunlight in a jar?"
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-matter-001"] }
+  },
+  {
+    "id": "science-matter-p002",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 1,
+    "order": 4,
+    "content": {
+      "question": "Water vapor (steam) is which state of matter?",
+      "questionType": "multiple-choice",
+      "options": ["Solid", "Liquid", "Gas", "Plasma"],
+      "correct": ["Gas"],
+      "acceptMultiple": false,
+      "hint": "Steam spreads out and fills the room. Which state does that?",
+      "explanationOnCorrect": "Yes! Steam is water in gas form. It spreads out to fill any container.",
+      "explanationOnWrong": "Steam is not liquid or solid - it spreads out like... a gas!"
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-002"] }
+  },
+  {
+    "id": "science-matter-p003",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 1,
+    "order": 5,
+    "content": {
+      "question": "True or False: A liquid takes the shape of its container.",
+      "questionType": "true-false",
+      "correct": ["true"],
+      "acceptMultiple": false,
+      "hint": "Pour water into a round glass, then into a square one...",
+      "explanationOnCorrect": "True! Liquids flow and change shape to match their container. They don't have a fixed shape.",
+      "explanationOnWrong": "Actually, liquids DO take the shape of their container - that's what makes them different from solids!"
+    },
+    "metadata": { "estimatedTime": 30, "prerequisites": ["science-matter-002"] }
+  },
+  {
+    "id": "science-matter-003",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 2,
+    "order": 6,
+    "content": {
+      "title": "Atoms: The Building Blocks",
+      "explanation": "Everything is made of atoms - tiny particles so small you can't see them with your eyes. Imagine shrinking a marble to the size of an atom. You'd need to shrink it a billion times! Atoms bond together to form molecules.",
+      "visual": "⚛️",
+      "visualAlt": "Atom diagram with nucleus and electrons",
+      "keyPoints": [
+        "Atoms are the smallest unit of an element",
+        "Atoms bond to form molecules (like H₂O = water)",
+        "All matter is made of atoms"
+      ]
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-matter-001"] }
+  },
+  {
+    "id": "science-matter-004",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 2,
+    "order": 7,
+    "content": {
+      "title": "Physical vs Chemical Changes",
+      "explanation": "When you cut paper, it's still paper - that's a physical change. But when you burn paper, it turns to ash and smoke - that's a chemical change! Physical changes change shape or size. Chemical changes make brand new substances.",
+      "visual": "✂️🔥",
+      "visualAlt": "Scissors cutting paper and fire burning paper",
+      "keyPoints": [
+        "Physical change: same substance, different form (melting ice, cutting)",
+        "Chemical change: new substance formed (burning, rusting, cooking)",
+        "Chemical changes are often hard to reverse"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-003"] }
+  },
+  {
+    "id": "science-matter-p004",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 2,
+    "order": 8,
+    "content": {
+      "question": "Which of these is a CHEMICAL change?",
+      "questionType": "multiple-choice",
+      "options": ["Melting butter", "Rusting iron", "Cutting wood", "Crushing a can"],
+      "correct": ["Rusting iron"],
+      "acceptMultiple": false,
+      "hint": "Ask: does a new substance form? Or does the material just change shape?",
+      "explanationOnCorrect": "Yes! Rust is a new substance (iron oxide) made from iron + oxygen. That's chemistry happening!",
+      "explanationOnWrong": "The other options all change shape or state, but the material stays the same. Rusting creates a whole new compound!"
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-matter-004"] }
+  },
+  {
+    "id": "science-matter-p005",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 2,
+    "order": 9,
+    "content": {
+      "question": "Water (H₂O) is made of which atoms?",
+      "questionType": "multiple-choice",
+      "options": ["Hydrogen and Oxygen", "Carbon and Oxygen", "Hydrogen and Nitrogen", "Oxygen and Carbon"],
+      "correct": ["Hydrogen and Oxygen"],
+      "acceptMultiple": false,
+      "hint": "The H in H₂O stands for Hydrogen. What does the O stand for?",
+      "explanationOnCorrect": "Correct! H = Hydrogen, O = Oxygen. Two hydrogen atoms + one oxygen atom = water!",
+      "explanationOnWrong": "Look at the formula: H₂O. H is Hydrogen, O is Oxygen. Two hydrogens plus one oxygen!"
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-003"] }
+  },
+  {
+    "id": "science-matter-p006",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 2,
+    "order": 10,
+    "content": {
+      "question": "Is melting ice a physical or chemical change?",
+      "questionType": "multiple-choice",
+      "options": ["Physical change", "Chemical change", "Both", "Neither"],
+      "correct": ["Physical change"],
+      "acceptMultiple": false,
+      "hint": "Is melted ice still water? Or did it become a new substance?",
+      "explanationOnCorrect": "Yes! Ice and liquid water are both H₂O. Only the state changed, not the substance. That's physical!",
+      "explanationOnWrong": "Ice and liquid water are the same substance (H₂O). Since nothing new formed, it's a physical change."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-004"] }
+  },
+  {
+    "id": "science-matter-005",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 3,
+    "order": 11,
+    "content": {
+      "title": "Density: Why Things Float or Sink",
+      "explanation": "Density is how much mass is packed into a space. A heavy object can float if it's not very dense (like a giant cargo ship). A small object can sink if it's very dense (like a coin). Density = mass ÷ volume.",
+      "visual": "🚢",
+      "visualAlt": "Ship floating on water despite being heavy",
+      "keyPoints": [
+        "Density = mass ÷ volume",
+        "Objects float if their density is LESS than water",
+        "Objects sink if their density is MORE than water",
+        "Density is measured in g/cm³"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-002"] }
+  },
+  {
+    "id": "science-matter-006",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 3,
+    "order": 12,
+    "content": {
+      "title": "Mixtures and Solutions",
+      "explanation": "When you stir salt into water, the salt disappears but the water still tastes salty. You made a solution! When you mix sand and water, you can still see both - that's a mixture. Solutions mix completely, mixtures don't.",
+      "visual": "🧂💧",
+      "visualAlt": "Salt dissolving in water forming a solution",
+      "keyPoints": [
+        "Mixture: components stay separate (e.g., sand in water)",
+        "Solution: one substance dissolves in another (e.g., salt in water)",
+        "The substance that dissolves is the solute",
+        "The substance it dissolves in is the solvent"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-003"] }
+  },
+  {
+    "id": "science-matter-p007",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 3,
+    "order": 13,
+    "content": {
+      "question": "A metal ball sinks in water. What does this tell us about its density compared to water?",
+      "questionType": "multiple-choice",
+      "options": ["Less than water", "Greater than water", "Equal to water", "Cannot be determined"],
+      "correct": ["Greater than water"],
+      "acceptMultiple": false,
+      "hint": "Things sink when they're heavier for their size than water.",
+      "explanationOnCorrect": "Correct! If density > water's density (1 g/cm³), the object sinks. The metal is denser than water.",
+      "explanationOnWrong": "When an object sinks, it means it's denser (heavier for its size) than the water around it."
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-matter-005"] }
+  },
+  {
+    "id": "science-matter-p008",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 3,
+    "order": 14,
+    "content": {
+      "question": "What is formed when sugar dissolves completely in water?",
+      "questionType": "multiple-choice",
+      "options": ["A mixture", "A solution", "A solid", "A compound"],
+      "correct": ["A solution"],
+      "acceptMultiple": false,
+      "hint": "When one substance disappears into another, what do we call that?",
+      "explanationOnCorrect": "Yes! Sugar dissolves uniformly in water, making a solution. You can't see the sugar but it's still there!",
+      "explanationOnWrong": "When a substance dissolves completely and uniformly, that's a solution, not just a mixture."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-006"] }
+  },
+  {
+    "id": "science-matter-007",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 4,
+    "order": 15,
+    "content": {
+      "title": "Elements and the Periodic Table",
+      "explanation": "An element is a pure substance made of only one type of atom. Gold is made only of gold atoms. Oxygen is made only of oxygen atoms. There are 118 known elements. Scientists organize them in the Periodic Table.",
+      "visual": "🔬",
+      "visualAlt": "Periodic table of elements",
+      "keyPoints": [
+        "An element contains only one type of atom",
+        "There are 118 known elements",
+        "Each element has a symbol (O = Oxygen, Fe = Iron)",
+        "The Periodic Table organizes elements by their properties"
+      ]
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-003"] }
+  },
+  {
+    "id": "science-matter-p009",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 4,
+    "order": 16,
+    "content": {
+      "question": "What is the chemical symbol for gold?",
+      "questionType": "multiple-choice",
+      "options": ["Go", "Au", "Gd", "Ag"],
+      "correct": ["Au"],
+      "acceptMultiple": false,
+      "hint": "Gold's symbol comes from its Latin name 'Aurum'.",
+      "explanationOnCorrect": "Au comes from 'Aurum', the Latin name for gold. Many element symbols come from ancient Latin names!",
+      "explanationOnWrong": "Gold's symbol is Au, from its Latin name 'Aurum'. Ag is silver (Argentum)."
+    },
+    "metadata": { "estimatedTime": 40, "prerequisites": ["science-matter-007"] }
+  },
+  {
+    "id": "science-matter-p010",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 4,
+    "order": 17,
+    "content": {
+      "question": "Fill in the blank: An element is a substance made of only one type of ___.",
+      "questionType": "fill-blank",
+      "correct": ["atom", "atoms"],
+      "acceptedVariants": ["atom", "atoms"],
+      "hint": "Think about the smallest building block of matter...",
+      "explanationOnCorrect": "Yes! An element contains only one type of atom. That's what makes it 'pure'.",
+      "explanationOnWrong": "Elements are the simplest substances - they're made of just one type of atom."
+    },
+    "metadata": { "estimatedTime": 35, "prerequisites": ["science-matter-007"] }
+  },
+  {
+    "id": "science-matter-008",
+    "type": "concept",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 5,
+    "order": 18,
+    "content": {
+      "title": "Phase Changes and Energy",
+      "explanation": "When matter changes state, it needs energy. Melting and evaporating require heat energy to break particle bonds. Freezing and condensing release heat energy. This is why sweating cools you down - liquid sweat evaporates and takes heat energy away from your skin!",
+      "visual": "🌡️",
+      "visualAlt": "Diagram showing energy in phase changes",
+      "keyPoints": [
+        "Melting: solid → liquid (needs heat)",
+        "Evaporation: liquid → gas (needs heat)",
+        "Condensation: gas → liquid (releases heat)",
+        "Freezing: liquid → solid (releases heat)"
+      ]
+    },
+    "metadata": { "estimatedTime": 45, "prerequisites": ["science-matter-002"] }
+  },
+  {
+    "id": "science-matter-p011",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 5,
+    "order": 19,
+    "content": {
+      "question": "Which phase changes ABSORB heat energy? (Select all that apply)",
+      "questionType": "multiple-choice",
+      "options": ["Melting", "Freezing", "Evaporation", "Condensation"],
+      "correct": ["Melting", "Evaporation"],
+      "acceptMultiple": true,
+      "hint": "Which changes go from a more 'organized' state to a less organized one?",
+      "explanationOnCorrect": "Yes! Both melting and evaporation require energy input to break the bonds between particles.",
+      "explanationOnWrong": "When matter goes from solid to liquid (melting) or liquid to gas (evaporation), it absorbs heat. Freezing and condensation release heat."
+    },
+    "metadata": { "estimatedTime": 55, "prerequisites": ["science-matter-008"] }
+  },
+  {
+    "id": "science-matter-p012",
+    "type": "practice",
+    "topic": "science",
+    "subtopic": "matter",
+    "difficulty": 5,
+    "order": 20,
+    "content": {
+      "question": "Why does sweating cool your body down?",
+      "questionType": "multiple-choice",
+      "options": [
+        "Sweat evaporates and takes heat energy away from your skin",
+        "Sweat adds water which is cold",
+        "Sweat freezes on your skin",
+        "Sweat increases your body temperature"
+      ],
+      "correct": ["Sweat evaporates and takes heat energy away from your skin"],
+      "acceptMultiple": false,
+      "hint": "Remember: evaporation absorbs heat energy. Where does that energy come from?",
+      "explanationOnCorrect": "Exactly! Evaporation requires heat energy. It takes that heat from your skin, making you feel cooler!",
+      "explanationOnWrong": "Sweat cools you because evaporation absorbs heat. The heat comes from your skin, making it cooler."
+    },
+    "metadata": { "estimatedTime": 50, "prerequisites": ["science-matter-008"] }
+  }
+]
