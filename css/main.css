@@ -87,6 +87,11 @@
   padding: 0;
 }
 
+/* Ensure [hidden] always hides elements even when a CSS rule sets display */
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
