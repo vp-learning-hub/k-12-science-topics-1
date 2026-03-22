@@ -225,7 +225,8 @@ const Storage = {
   },
 
   /**
-   * Check and unlock next subtopics based on score threshold
+   * Check and unlock next subtopics based on score threshold.
+   * Also re-locks topics that haven't been earned when switching back to locked mode.
    */
   checkUnlocks(data) {
     const UNLOCK_THRESHOLD = 70;
@@ -235,18 +236,28 @@ const Storage = {
     for (let i = 1; i < order.length; i++) {
       const prev = order[i - 1];
       const curr = order[i];
-      // Only unlock if lock mode is on
-      if (data.lockMode && tp[curr].status === 'locked') {
-        if (tp[prev].score >= UNLOCK_THRESHOLD || tp[prev].status === 'completed') {
+      const earned = tp[prev].score >= UNLOCK_THRESHOLD || tp[prev].status === 'completed';
+
+      if (!data.lockMode) {
+        // Free mode: unlock all locked topics
+        if (tp[curr].status === 'locked') {
           tp[curr].status = 'available';
-          this.save(data);
         }
-      } else if (!data.lockMode && tp[curr].status === 'locked') {
-        // Free mode: unlock all
-        tp[curr].status = 'available';
-        this.save(data);
+      } else {
+        // Locked mode: unlock only if earned; re-lock if not earned and not completed
+        if (earned) {
+          if (tp[curr].status === 'locked') {
+            tp[curr].status = 'available';
+          }
+        } else {
+          // Re-lock if topic hasn't been started (no cards completed)
+          if (tp[curr].status !== 'completed' && (tp[curr].cardsCompleted || 0) === 0) {
+            tp[curr].status = 'locked';
+          }
+        }
       }
     }
+    this.save(data);
     return data;
   },
 

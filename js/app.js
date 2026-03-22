@@ -39,9 +39,10 @@ const App = {
       this.state.sessionScore = 0; // Session score starts fresh
     }
 
-    // Reset session counters for new session
-    this.state.data.session.cardsSinceLastFact =
-      this.state.data.session.cardsSinceLastFact || 0;
+    // Reset fact counter at the start of each session visit so we don't
+    // immediately inject a fact card on resume due to a stale persisted value.
+    this.state.data.session.cardsSinceLastFact = 0;
+    Storage.save(this.state.data);
 
     // Load cards for this subtopic
     try {

@@ -166,12 +166,19 @@ const Cards = {
 
     let submitted = false;
     let wrongCount = 0;
+    // 'check' = evaluating answers, 'next' = waiting to advance
+    let btnMode = 'check';
 
     const checkBtn = document.createElement('button');
     checkBtn.className = 'btn btn--primary btn--lg';
     checkBtn.textContent = 'Check Answer ✓';
 
     checkBtn.addEventListener('click', () => {
+      if (btnMode === 'next') {
+        onComplete({ type: 'practice', cardId: data.id, correct: submitted === 'correct', wrongCount });
+        return;
+      }
+
       if (submitted) return;
       const userAnswer = getAnswer();
 
@@ -189,28 +196,22 @@ const Cards = {
       const isCorrect = this._checkAnswer(userAnswer, data);
 
       if (isCorrect) {
-        submitted = true;
+        submitted = 'correct';
+        btnMode = 'next';
         setDisabled(true);
         this._showFeedback(feedbackArea, true, data.content.explanationOnCorrect);
         checkBtn.textContent = 'Next Card →';
-        checkBtn.removeEventListener('click', arguments.callee);
-        checkBtn.addEventListener('click', () => {
-          onComplete({ type: 'practice', cardId: data.id, correct: true, wrongCount });
-        });
         if (Storage.get().preferences.soundEnabled) Utils.playCorrect();
       } else {
         wrongCount++;
         if (wrongCount >= 2) {
           // After 2 wrong, show answer and allow continuing
-          submitted = true;
+          submitted = 'wrong';
+          btnMode = 'next';
           setDisabled(true);
           this._showFeedback(feedbackArea, false, data.content.explanationOnWrong);
           this._markCorrectOptions(inputArea, data);
           checkBtn.textContent = 'Continue →';
-          checkBtn.removeEventListener('click', arguments.callee);
-          checkBtn.addEventListener('click', () => {
-            onComplete({ type: 'practice', cardId: data.id, correct: false, wrongCount });
-          });
         } else {
           this._showFeedback(feedbackArea, false, 'Not quite! Try again 💪');
         }
